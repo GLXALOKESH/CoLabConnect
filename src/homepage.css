@@ -1,0 +1,425 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+button {
+    all: unset;
+    /* Resets all properties except unicode-bidi and direction */
+    display: inline-block;
+    /* Ensures the button is still inline-block */
+    cursor: pointer;
+    /* Adds the pointer cursor */
+}
+
+/* Additional styles to make it look consistent */
+button {
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+    border: none;
+    /* Remove border */
+    background: none;
+    /* Remove background */
+    color: inherit;
+    /* Inherit text color */
+    font: inherit;
+    /* Inherit font properties */
+    text-align: inherit;
+    /* Inherit text alignment */
+}
+
+
+/* homapage navbar */
+
+.homepage-navbar {
+    background-color: #222;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.h-n-profilelogo {
+    background-color: white;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.h-n-buttons {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+    align-items: center;
+}
+
+.h-n-create {
+    height: 25px;
+    background-color: white;
+    text-transform: capitalize;
+    padding: 5px;
+
+}
+
+.h-n-join {
+    height: 25px;
+    background-color: white;
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+.btn {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-family: 'Noto Sans';
+    border: 1px solid black;
+    user-select: none;
+}
+
+.h-n-join:hover,
+.h-n-create:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(0, 255, 255);
+    box-shadow: 0px 0px 7px 0px rgb(0, 255, 255);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.h-container {
+    width: 100%;
+    height: calc(100vh - 60px);
+    /* background-color: red; */
+    display: flex;
+
+}
+
+.homepage-sidebar {
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.39);
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.452);
+    padding: 5px 0px;
+    padding-top: 10px;
+}
+
+.homepage-teams {
+    height: 100%;
+    width: 70%;
+    padding: 10px 15px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.h-yourteams {
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.452);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans';
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+    gap: 5px;
+    user-select: none;
+}
+
+.h-t-card {
+    width: 100%;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.452);
+    height: 130px;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    padding: 10px;
+    font-family: 'Noto Sans';
+    background-color: #222;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.h-t-txt {
+    line-height: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px;
+    text-wrap: nowrap;
+    color: white;
+}
+
+.h-t-teamName {
+    font-size: 28px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.h-t-companyName {
+    text-transform: capitalize;
+    font-size: 18px;
+    margin: 10px 5px;
+    opacity: 80%;
+
+}
+
+.h-t-membersCount {
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 15px 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.h-ico {
+    font-size: 50px;
+}
+
+.h-createbtnbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 40vh;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    z-index: 10;
+    border: 1px solid cyan;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.h-createbtnbox label {
+    font-family: "Noto Sans";
+    user-select: none;
+}
+
+.h-createbtnbox input {
+    width: 90%;
+    height: 25px;
+    outline: none;
+    font-size: 16px;
+}
+
+.h-createbtnbox button {
+    padding: 7px;
+    margin-top: 10px;
+    background-color: #222;
+    width: fit-content;
+    border-radius: 8px;
+    color: white;
+    user-select: none;
+}
+
+.h-createbtnbox button:hover {
+    background-color: black;
+}
+
+.h-createbtnbox img {
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.h-layer {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: 8;
+    background-color: rgba(0, 0, 0, 0.13);
+    display: none;
+}
+
+.h-joinbtnbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 40vh;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    z-index: 10;
+    border: 1px solid cyan;
+    box-shadow: 0px 0px 5px 0px black;
+
+}
+
+.h-joinbtnbox label {
+    font-family: "Noto Sans";
+    user-select: none;
+}
+
+.h-joinbtnbox input {
+    width: 90%;
+    height: 25px;
+    outline: none;
+    font-size: 16px;
+}
+
+.h-joinbtnbox button {
+    padding: 7px;
+    margin-top: 10px;
+    background-color: #222;
+    width: fit-content;
+    border-radius: 8px;
+    color: white;
+    user-select: none;
+}
+
+.h-joinbtnbox button:hover {
+    background-color: black;
+}
+
+.h-joinbtnbox img {
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.h-slidebar {
+    height: 100%;
+    background-color: #222222;
+    width: 30%;
+    padding: 25px 10px;
+    color: white;
+    position: absolute;
+    left: -1000px;
+    top: 0;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    z-index: 11;
+}
+
+.h-sl-profile {
+    height: 40px;
+    display: flex;
+
+}
+
+.h-sl-profile img:nth-child(3) {
+    margin-left: auto;
+    height: 20px;
+    cursor: pointer;
+}
+
+.h-sl-profile .names {
+    height: 100%;
+    width: 50%;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Noto Sans";
+}
+
+.h-sl-profile .names .name{
+font-size: 14px;
+
+}
+
+.h-sl-profile .names .id{
+    font-size: 12px;
+
+}
+
+
+.h-slidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Noto Sans';
+    margin-top: 30px;
+}
+
+.h-slidebar ul li {
+    list-style: none;
+}
+
+.h-slidebar ul li span {
+    cursor: pointer;
+}
+
+.h-slidebar ul li span:hover {
+    text-decoration: underline;
+}
+
+.h-sl-yourteam {
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .homepage-sidebar {
+        display: none;
+    }
+
+    .homepage-teams {
+        width: 100%;
+    }
+
+    .h-slidebar {
+        width: 40%;
+    }
+
+    .h-createbtnbox {
+        width: 70vw;
+        height: 40vh;
+    }
+
+    .h-joinbtnbox {
+        width: 70vw;
+        height: 40vh;
+    }
+
+}
