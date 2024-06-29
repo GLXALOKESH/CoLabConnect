@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up---CoLabConnect</title>
+    <link rel="stylesheet" href="signup.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="su-container">
+        <!-- container header -->
+        <div class="su-header">
+            <p>Sign Up</p>
+            <div class="su-h-line"></div>
+        </div>
+        <!-- container form -->
+        <form>
+            <div>
+                <label for="su-name">Enter Your Username</label>
+                <div class="su-name-cont">
+                    <input type="text" name="su-name" id="su-name" placeholder="Username">
+                </div>
+            </div>
+
+            <div>
+                <label for="su-pass">Enter Your Password</label>
+                <div class="su-pass-cont su-pass-cont">
+                    <input type="password" name="su-pass" placeholder="Password" id="su-pass" class="su-passes">
+                    <div class="su-eye">
+                        <img src="images/eyeclose.svg" alt="eye" id="pass-ey">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <label for="su-confpass"> Confirm the Password</label>
+                <div class="su-confpass-cont su-pass-cont">
+                    <input type="password" name="su-confpass" id="su-confpass" placeholder="Confirm Password"
+                        class="su-passes">
+                    <div class="su-eye ">
+                        <img src="images/eyeclose.svg" alt="eye" id="conf-ey">
+                    </div>
+                </div>
+            </div>
+            <div class="su-already"> <a href="">Already Registered? Log in here</a></div>
+            <!-- submit button -->
+            <button class="su-submit">Submit</button>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>
