@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans";
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+button {
+    all: unset;
+    /* Resets all properties except unicode-bidi and direction */
+    display: inline-block;
+    /* Ensures the button is still inline-block */
+    cursor: pointer;
+    /* Adds the pointer cursor */
+}
+
+/* Additional styles to make it look consistent */
+button {
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+    border: none;
+    /* Remove border */
+    background: none;
+    /* Remove background */
+    color: inherit;
+    /* Inherit text color */
+    font: inherit;
+    /* Inherit font properties */
+    text-align: inherit;
+    /* Inherit text alignment */
+}
+
+nav{
+    background-color: #222;
+    height: 60px;
+    width: 100%;
+    color: white;
+    padding: 5px 10px;
+    display: flex;
+}
+
+.ld-n-logo{
+    height: 90%;
+    aspect-ratio: 1;
+    background-color: yellow;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+
+.ld-n-logo-cont{
+    height: 100%;
+    width: 50px;
+    display: flex;
+    gap: 5px;
+     color: white;
+     align-items: center;
+     font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 60px;
+}
+nav ul li{
+    list-style: none;
+
+}
+nav ul a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+}
+
+.ld-cont{
+    width: 100%;
+    height: calc(100% - 60px);
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ld-innercont{
+    /* background-color: yellow; */
+    height: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ld-heading{
+    font-size: 38px;
+    text-transform: capitalize;
+}
+.ld-desc{
+    font-size: 15px;
+    color: rgb(82, 82, 82);
+}
+.ld-started{
+    background-color: black;
+    color: aqua;
+    padding: 7px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.ld-started:hover{
+    color: white;
+    border: 1px solid yellow;
+    transition: all 0.6s ease-in-out ;
+    -webkit-transition: all 0.6s ease-in-out ;
+    -moz-transition: all 0.6s ease-in-out ;
+    -ms-transition: all 0.6s ease-in-out ;
+    -o-transition: all 0.6s ease-in-out ;
+}
