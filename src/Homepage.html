@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage--CoLabConnect</title>
+    <link rel="stylesheet" href="homepage.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Home Page -->
+    <!-- Navbar -->
+    <nav class="homepage-navbar">
+        <div class="h-n-profilelogo " id="h-n-profilelogo">
+            <img src="images/profilepic.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="h-n-buttons">
+            <button class="btn h-n-create" id="createbtn">create team</button>
+            <button class="btn h-n-join" id="joinbtn">join team</button>
+        </div>
+    </nav>
+    <div class="h-container">
+        <!-- sidebar -->
+        <div class="homepage-sidebar">
+            <div class="h-yourteams"><img src="images/teams1.svg" alt="" height="17px"> Your teams</div>
+        </div>
+        <!-- homepage-teams -->
+        <div class="homepage-teams" id="homepage-teams"></div>
+    </div>
+    <!-- create box -->
+    <div class="h-createbtnbox" id="createbtnbox">
+        <img src="images/cross.svg" alt="cross" id="createBoxCancle">
+        <label for="name">Team Name</label>
+        <input type="text" name="name" id="name">
+        <label for="cname">Company Name </label>
+        <input type="text" name="cname" id="cname">
+        <button id="createbtnboxBtn">Create</button>
+    </div>
+    <!-- underlayer -->
+    <div class="h-layer" id="layer"></div>
+    <!-- join box -->
+    <div class=" h-joinbtnbox " id="joinbtnbox">
+        <img src="images/cross.svg" alt="cross" id="joinBoxCancle">
+        <label for="jlink">Invite Link</label>
+        <input type="text" name="name" id="jlink">
+        <label for="jrname">Role</label>
+        <input type="text" name="cname" id="jrname">
+        <button id="joinbtnboxBtn">Join</button>
+    </div>
+<!-- slidebar -->
+    <div class="h-slidebar" id="h-slidebar">
+        <div class="h-sl-profile">
+            <div class="h-n-profilelogo">
+                <img src="images/profilepic.jpg" alt="" height="100%" width="100%">
+            </div>
+            <div class="names">
+                <p class="name .h-t-txt ">YourName</p>
+                <p class="id .h-t-txt ">@YOurID</p>
+            </div>
+            <img src="images/cross.svg" alt="cross" id="h-sl-cross">
+        </div>
+        <ul>
+            <li><span>Profile</span></li>
+            <li><span>About Us</span></li>
+            <li><span>Log out</span></li>
+        </ul>
+        <div class="h-sl-yourteam h-yourteams" id="h-sl-yourteam"><img src="images/teams1.svg" alt="" height="17px"> Your teams</div>
+    </div>
+    <script src="homepage.js"></script>
+
+
+</body>
+
+</html>
