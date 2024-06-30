@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard--CoLabConnect</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Home Page -->
+    <!-- Navbar -->
+    <nav class="homepage-navbar">
+        <div class="h-n-profilelogo " id="h-n-profilelogo">
+            <img src="images/profilepic.jpg" alt="" height="100%" width="100%">
+        </div>
+
+    </nav>
+    <div class="h-container">
+        <!-- sidebar -->
+        <div class="dashboard-sidebar homepage-sidebar">
+            <div class="h-yourteams"><img src="images/dashboard.svg" alt="" height="17px">Dashboard</div>
+            <div class="h-yourteams"><img src="images/chat.svg" alt="" height="17px">Chat</div>
+            <div class="h-yourteams"><img src="images/meet.svg" alt="" height="17px">Meet</div>
+            <div class="h-yourteams"><img src="images/task.svg" alt="" height="17px">tasks</div>
+            <div class="h-yourteams"><img src="images/commit.svg" alt="" height="17px">Commits</div>
+            <div class="h-yourteams"><img src="images/settings.svg" alt="" height="17px">settings</div>
+        </div>
+        <!-- main container -->
+        <div class="ds-content-cont">
+            <div class="ds-c-header">
+                Dashboard
+                <div class="ds-c-line"></div>
+            </div>
+            <div class="ds-c-innercont">
+                <div class="ds-inc-header">
+                    <div class="inc-leave"><img src="images/leave.svg" alt="leave">Leave</div>
+                    <div class="inc-members"><img src="images/teams2.svg" alt="teams" height="20px"
+                            style="filter: invert(1);"> 0</div>
+                </div>
+                <div class="inc-cont">
+                    <div class="inc-cont-card">
+                        <div class="in-cont-in-0">
+                            <div class="in-cont-profilelogo">
+                                <img src="images/profilepic.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="in-cont-in-1">
+                            <div class="ds-in-c-name">person name</div>
+                            <div class="ds-in-c-role">Software Developer</div>
+                        </div>
+                        <div class="in-cont-in-2">
+                            <img src="images/removeperson.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- underlayer -->
+        <div class="h-layer" id="layer"></div>
+
+        <!-- slidebar -->
+        <div class="h-slidebar" id="h-slidebar">
+            <div class="h-sl-profile">
+                <div class="h-n-profilelogo">
+                    <img src="images/profilepic.jpg" alt="" height="100%" width="100%">
+                </div>
+                <div class="names">
+                    <p class="name .h-t-txt ">YourName</p>
+                    <p class="id .h-t-txt ">@YOurID</p>
+                </div>
+                <img src="images/cross.svg" alt="cross" id="h-sl-cross">
+            </div>
+            <ul>
+                <li><span>Profile</span></li>
+                <li><span>About Us</span></li>
+                <li><span>Log out</span></li>
+            </ul>
+            <div class="sidebar-list">
+                <div class="h-yourteams"><img src="images/dashboard.svg" alt="" height="17px">Dashboard</div>
+                <div class="h-yourteams"><img src="images/chat.svg" alt="" height="17px">Chat</div>
+                <div class="h-yourteams"><img src="images/meet.svg" alt="" height="17px">Meet</div>
+                <div class="h-yourteams"><img src="images/task.svg" alt="" height="17px">tasks</div>
+                <div class="h-yourteams"><img src="images/commit.svg" alt="" height="17px">Commits</div>
+                <div class="h-yourteams"><img src="images/settings.svg" alt="" height="17px">settings</div>
+            </div>
+        </div>
+        <script src="dashboard.js"></script>
+
+
+</body>
+
+</html>
