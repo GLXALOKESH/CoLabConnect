@@ -13,10 +13,12 @@ let confSubmit = document.getElementById("p-conf-sub")
 let confSubmitbool = false;
 let changeNameCancle = document.getElementById("changeNameCancle");
 let changeCompanyCancle = document.getElementById("changeCompanyCancle");
+let layer = document.getElementById("layer");
 //delete team btn function
 delTeamBtn.addEventListener("click", () => {
     passConf.style.display = "inline-block"
     delTeamBtnbool = true
+    layer.style.display = "block"
 
 })
 //hide passconf box
@@ -31,6 +33,7 @@ cut.addEventListener("click", () => {
     else {
         chcompBoxbool = false
     }
+    layer.style.display = "none"
 })
 //pass conf submit btn
 confSubmit.addEventListener("click", () => {
@@ -48,23 +51,30 @@ confSubmit.addEventListener("click", () => {
         if (delTeamBtnbool) {
             delTeamBtnbool = false
             confSubmitbool = false
+            layer.style.display = "none"
         }
         else if (chTeamBoxbool) {
             // chTeamBoxbool = false
             confSubmitbool = true
+            layer.style.display = "none"
+
             logic()
         }
         else {
             // chcompBoxbool = false
             confSubmitbool = true
+            layer.style.display = "none"
+
             logic()
         }
+
     }
 })
 //change team name btn function
 chTeamBtn.addEventListener("click", () => {
     passConf.style.display = "inline-block"
     chTeamBoxbool = true
+    layer.style.display = "block"
 
 
 })
@@ -73,6 +83,7 @@ chTeamBtn.addEventListener("click", () => {
 chCompBtn.addEventListener("click", () => {
     passConf.style.display = "inline-block"
     chcompBoxbool = true
+    layer.style.display = "block"
 
 
 })
@@ -81,11 +92,13 @@ chCompBtn.addEventListener("click", () => {
 function logic() {
     if (chTeamBoxbool && confSubmitbool) {
         chTeamBox.style.display = "block"
+        layer.style.display = "block"
 
 
     }
     else if (chcompBoxbool && confSubmitbool) {
         ChcompBox.style.display = "block"
+        layer.style.display = "block"
 
     }
 
@@ -97,6 +110,7 @@ changeNameCancle.addEventListener("click", () => {
     chTeamBoxbool = false
     confSubmitbool = false
 
+    layer.style.display = "none"
 
 
 })
@@ -106,6 +120,8 @@ changeCompanyCancle.addEventListener("click", () => {
     ChcompBox.style.display = "none"
     chcompBoxbool = false
     confSubmitbool = false
+    layer.style.display = "none"
+
 
 })
 
@@ -125,6 +141,8 @@ submitChTm.addEventListener("click", () => {
         chTeamBox.style.display = "none"
         chTeamBoxbool = false
         confSubmitbool = false
+        layer.style.display = "none"
+
     }
 })
 
@@ -145,6 +163,8 @@ submitChCom.addEventListener("click", () => {
         ChcompBox.style.display = "none"
         chcompBoxbool = false
         confSubmitbool = false
+        layer.style.display = "none"
+
     }
 })
 

@@ -176,3 +176,15 @@
 }
 
 
+@media screen and (max-width: 450px) {
+
+    .dashboard-sidebar{
+        display: none;
+    }
+    .ds-content-cont{
+        width: 100%;
+    }
+    .h-slidebar{
+        width: 70%;
+    }
+}
