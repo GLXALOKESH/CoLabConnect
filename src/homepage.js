@@ -27,6 +27,10 @@ function createTeamCard(teamName, companyName, membersCount) {
 
     const container = document.getElementById("homepage-teams")
     container.appendChild(cardDiv)
+
+    cardDiv.addEventListener("click", ()=>{
+        window.location.href = "dashboard.html"
+    })
 }
 
 // createTeamCard('Team Awesome', 'Awesome Inc.', 512, 'team-cards-container');

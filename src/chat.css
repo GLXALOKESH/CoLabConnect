@@ -1,0 +1,128 @@
+.ds-inc-header {
+    justify-content: end;
+    gap: 20px;
+    padding: 0px 20px;
+}
+
+.chat-btn {
+    width: fit-content;
+    height: fit-content;
+    background-color: #222;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 12px;
+    user-select: none;
+}
+
+.inc-cont {
+    height: calc(100% - 100px);
+
+}
+
+.chat-writecont {
+    height: 60px;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.massege {
+    width: 90%;
+    height: 100%;
+    outline: none;
+    padding: 2px 5px;
+}
+
+.chatbubble-user {
+    margin-left: auto;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-wrap: wrap;
+    max-width: 47%;
+    line-break: anywhere;
+
+}
+
+.chatbubble-other {
+    margin-right: auto;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-wrap: wrap;
+    max-width: 47%;
+    line-break: anywhere;
+}
+
+.chat-inncont {
+    /* background-color: green; */
+    height: calc(100% - 40px);
+    width: 100%;
+    padding: 20px;
+}
+
+.chatroom {
+    background-color: white;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.659);
+    height: 100px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.chat-text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-buttons {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-name {
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.chat-status {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#online{
+    color: green;
+}
+#offline{
+    color: red;
+}

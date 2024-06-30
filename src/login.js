@@ -15,7 +15,7 @@ form.addEventListener("submit", (event) => {
         eyeborder.style.borderColor = "red"
         
     } else {
-        
+        window.location.href = "Homepage.html"
     }
 });
 
