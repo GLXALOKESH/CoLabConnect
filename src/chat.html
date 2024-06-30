@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat--CoLabConnect</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="chat.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Home Page -->
+    <!-- Navbar -->
+    <nav class="homepage-navbar">
+        <div class="h-n-profilelogo " id="h-n-profilelogo">
+            <img src="images/profilepic.jpg" alt="" height="100%" width="100%">
+        </div>
+
+    </nav>
+    <div class="h-container">
+        <!-- sidebar -->
+        <div class="dashboard-sidebar homepage-sidebar">
+            <div class="h-yourteams"><img src="images/dashboard.svg" alt="" height="17px">Dashboard</div>
+            <div class="h-yourteams"><img src="images/chat.svg" alt="" height="17px">Chat</div>
+            <div class="h-yourteams"><img src="images/meet.svg" alt="" height="17px">Meet</div>
+            <div class="h-yourteams"><img src="images/task.svg" alt="" height="17px">tasks</div>
+            <div class="h-yourteams"><img src="images/commit.svg" alt="" height="17px">Commits</div>
+            <div class="h-yourteams"><img src="images/settings.svg" alt="" height="17px">settings</div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- main container -->
+        <div class="ds-content-cont" >
+            <div class="ds-c-header">
+                Chat
+                <div class="ds-c-line"></div>
+            </div>
+
+
+            <!-- /chat in start -->
+            <div class="ds-c-innercont" style="display: none;" id="chatwindow">
+                <div class="ds-inc-header" >
+                    <button class="chat-btn " id="leave">Leave</button>
+                    <button class="chat-btn " id="stop">Stop</button>
+
+                </div>
+                <!-- container for workspace -->
+                <div class="inc-cont" id="inc-cont">
+                
+                </div>
+                <div class="chat-writecont">
+                    <input type="text" class="massege" placeholder="Type Your Massege Here" id="chatWrite">
+                    <button class="chat-btn" id="send">Send</button>
+                </div>
+            </div>
+            <!--/chat in end-->
+
+            <div class="chat-inncont" id="chat-inncont">
+                <div class="chatroom">
+                    <div class="chat-text">
+                        <div class="chat-name">Chatroom</div>
+                        <div class="chat-status" id="online" style="display: none;">online</div>
+                        <div class="chat-status" id="offline" >offline</div>
+                    </div>
+                    <div class="chat-buttons">
+                        <button class="chat-btn" id="join">Join</button>
+                        <button class="chat-btn" id="create">Create</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- underlayer -->
+        <div class="h-layer" id="layer"></div>
+
+        <!-- slidebar -->
+        <div class="h-slidebar" id="h-slidebar">
+            <div class="h-sl-profile">
+                <div class="h-n-profilelogo">
+                    <img src="images/profilepic.jpg" alt="" height="100%" width="100%">
+                </div>
+                <div class="names">
+                    <p class="name .h-t-txt ">YourName</p>
+                    <p class="id .h-t-txt ">@YOurID</p>
+                </div>
+                <img src="images/cross.svg" alt="cross" id="h-sl-cross">
+            </div>
+            <ul>
+                <li><span>Profile</span></li>
+                <li><span>About Us</span></li>
+                <li><span>Log out</span></li>
+            </ul>
+            <div class="sidebar-list">
+                <div class="h-yourteams"><img src="images/dashboard.svg" alt="" height="17px">Dashboard</div>
+                <div class="h-yourteams"><img src="images/chat.svg" alt="" height="17px">Chat</div>
+                <div class="h-yourteams"><img src="images/meet.svg" alt="" height="17px">Meet</div>
+                <div class="h-yourteams"><img src="images/task.svg" alt="" height="17px">tasks</div>
+                <div class="h-yourteams"><img src="images/commit.svg" alt="" height="17px">Commits</div>
+                <div class="h-yourteams"><img src="images/settings.svg" alt="" height="17px">settings</div>
+            </div>
+        </div>
+        <script src="chat.js"></script>
+
+
+</body>
+
+</html>
