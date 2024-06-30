@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings---CoLabConnect</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="settings.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Home Page -->
+    <!-- Navbar -->
+    <nav class="homepage-navbar">
+        <div class="h-n-profilelogo " id="h-n-profilelogo">
+            <img src="images/profilepic.jpg" alt="" height="100%" width="100%">
+        </div>
+
+    </nav>
+    <div class="h-container">
+        <!-- sidebar -->
+        <div class="dashboard-sidebar homepage-sidebar">
+            <div class="h-yourteams"><img src="images/dashboard.svg" alt="" height="17px">Dashboard</div>
+            <div class="h-yourteams"><img src="images/chat.svg" alt="" height="17px">Chat</div>
+            <div class="h-yourteams"><img src="images/meet.svg" alt="" height="17px">Meet</div>
+            <div class="h-yourteams"><img src="images/task.svg" alt="" height="17px">tasks</div>
+            <div class="h-yourteams"><img src="images/commit.svg" alt="" height="17px">Commits</div>
+            <div class="h-yourteams"><img src="images/settings.svg" alt="" height="17px">settings</div>
+        </div>
+        <!-- main container -->
+        <div class="ds-content-cont">
+            <div class="ds-c-header">
+                Settings
+                <div class="ds-c-line"></div>
+            </div>
+            <div class="ds-c-innercont">
+                <div class="ds-inc-header">
+                    Admin Settings
+                </div>
+                <!-- container for workspace -->
+                <div class="inc-cont">
+                    <ul>
+                        <li id="dlteam"><img src="images/pointer.svg" alt="">Delete Team</li>
+                        <li id="chtname"><img src="images/pointer.svg" alt="">Change Team name</li>
+                        <li id="chcname"><img src="images/pointer.svg" alt="">change company name</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- underlayer -->
+        <div class="h-layer" id="layer"></div>
+
+        <!-- slidebar -->
+        <div class="h-slidebar" id="h-slidebar">
+            <div class="h-sl-profile">
+                <div class="h-n-profilelogo">
+                    <img src="images/profilepic.jpg" alt="" height="100%" width="100%">
+                </div>
+                <div class="names">
+                    <p class="name .h-t-txt ">YourName</p>
+                    <p class="id .h-t-txt ">@YOurID</p>
+                </div>
+                <img src="images/cross.svg" alt="cross" id="h-sl-cross">
+            </div>
+            <ul>
+                <li><span>Profile</span></li>
+                <li><span>About Us</span></li>
+                <li><span>Log out</span></li>
+            </ul>
+            <div class="sidebar-list">
+                <div class="h-yourteams"><img src="images/dashboard.svg" alt="" height="17px">Dashboard</div>
+                <div class="h-yourteams"><img src="images/chat.svg" alt="" height="17px">Chat</div>
+                <div class="h-yourteams"><img src="images/meet.svg" alt="" height="17px">Meet</div>
+                <div class="h-yourteams"><img src="images/task.svg" alt="" height="17px">tasks</div>
+                <div class="h-yourteams"><img src="images/commit.svg" alt="" height="17px">Commits</div>
+                <div class="h-yourteams"><img src="images/settings.svg" alt="" height="17px">settings</div>
+            </div>
+        </div>
+
+        <!-- box for delete confirmation -->
+        <div class="pass-conf" id="pass-conf">
+            <div class="s-d-in-s1"><img src="images/cross.svg" alt="" id="cancle-passconf"></div>
+            <div class="s-d-in-s2">
+                <img src="images/usershild.svg" alt="">
+            </div>
+            <div class="s-d-in-s3">
+                <div>
+                    <label for="su-pass">Enter Your Password</label>
+                    <div class="su-pass-cont">
+                        <input type="password" name="su-pass" placeholder="Password" id="su-pass" class="su-passes">
+                        <div class="su-eye">
+                            <img src="images/eyeclose.svg" alt="eye" id="pass-ey">
+                        </div>
+
+                    </div>
+                    <p class="lg-wrong" id="lg-wrong">Username or Password is wrong</p>
+                    <button class="pass-conf-subm" id="p-conf-sub">Submit</button>
+                </div>
+            </div>
+        </div>
+        <!-- change name box -->
+        <div class="st-ch-name" id="st-ch-name" >
+            <div class="s-d-in-s1"><img src="images/cross.svg" alt="" id="changeNameCancle"></div>
+
+            <p class="st-lb">Change team name</p>
+            <input type="text" id="ch-name">
+            <button class="pass-conf-subm" id="c-tm-sub">Submit</button>
+        </div>
+        <!-- change company name box -->
+        <div class="st-ch-name" id="st-com-name">
+            <div class="s-d-in-s1"><img src="images/cross.svg" alt="" id="changeCompanyCancle" ></div>
+            <p class="st-lb">change company name</p>
+            <input type="text" id="ch-com">
+            <button class="pass-conf-subm" id="c-com-sub">Submit</button>
+        </div>
+        <script src="settings.js"></script>
+
+
+</body>
+
+</html>
